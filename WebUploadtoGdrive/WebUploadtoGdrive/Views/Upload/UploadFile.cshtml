@@ -10,5 +10,7 @@
         @Html.TextBox("file", "", new { type = "file" }) <br />
         <input type="submit" value="Upload" />
         @ViewBag.Message
+        <asp:HyperLink NavigateUrl=@ViewBag.FHIRResUrl Text="超連結" /><br />
+        FHIR result: <a href="@ViewBag.FHIRResUrl" target="_blank">@ViewBag.FHIRResUrl</a>
     </div>
 }
